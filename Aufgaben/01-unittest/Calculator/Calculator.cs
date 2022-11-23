@@ -4,14 +4,29 @@ namespace Calculator
 {
     public class Calculator
     {
-        public int Add(int summandA, int summandB)
+        public double Add(double a, double b)
         {
-            return summandA + summandB;
+            return a + b;
         }
 
-        public int Subtract(int minuend, int subtrahend)
+        public double Subtract(double a, double b)
         {
-            return minuend - subtrahend;
+            return a - b;
+        }
+
+        public double Multiply(double a, double b)
+        {
+            return a * b;
+        } 
+
+        public double Divide(double a, double b)
+        {
+            if (b == 0)
+            {
+                Console.log("Kann nicht durch 0 dividiert werden!")
+            }
+
+            return a / b;
         }
     }
 }
